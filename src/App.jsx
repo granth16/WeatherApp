@@ -34,7 +34,7 @@ function App() {
       
       const weatherForecast = await fetch(data.properties.forecast);
       const newData = await weatherForecast.json();
-      setWeatherData(newData.properties.periods); // Extract periods directly for carousel
+      setWeatherData(newData.properties.periods); 
       setError(null);
     } catch (err) {
       setWeatherData(null);
